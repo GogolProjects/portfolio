@@ -1,11 +1,8 @@
 
-import Logo from '@/images/Logo.png'
+import Portfolio from '@/images/Portfolio.png'
+import Travelit from '@/images/Travelit.png'
 export const links = [
- {
-    picture: Logo,
-    hash: "#Start",
 
- },
 
  {
     name: "About",
@@ -24,8 +21,32 @@ export const links = [
 ] as const
 
 export const skils = [
+   "HTML",  
+   "CSS",  
+   "TypeScript",
+   "JavaScript",
+   "React",
+   "NextJs" ,
+   "Tailwind",
+   "Axios",
+   "Prisma",
+   "ZOD",
+   "NextAuth",
+  
+] as const
+
+export const projects = [
    {
-      name: "NextJs" ,
+      title: 'Traveit',
+      description: 'This is description of my project',
+      imageUrl: Travelit,
 
    },
+
+   {
+      title: 'Portfolio',
+      description: 'This is sescription',
+      imageUrl: Portfolio,
+   }
 ] as const
+

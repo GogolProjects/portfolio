@@ -1,6 +1,9 @@
+
 import React from 'react'
 
 function About() {
+ 
+ 
   return (
     <div id='About' className='flex  sm:flex-row flex-col items-center sm:space-x-[10vw] justify-center sm:ml-6' >
        <header className='items-center text-3xl pb-4'>About</header>
