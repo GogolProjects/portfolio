@@ -25,7 +25,7 @@ export default function RootLayout({
         <div className='sticky top-0 z-10'>
           <Navbar />
         </div>
-        {children}
+          {children}
         </body>
     </html>
   )

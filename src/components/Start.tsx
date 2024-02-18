@@ -10,7 +10,7 @@ function Start() {
       <div className='w-[40vw] sm:w-[20vw]  justify-center sm:ml-0 p-5 bg-[#692a9d]/30 sm:bg-blue-900/30  shadow-2xl rounded-3xl sm:rounded-l-3xl sm:rounded-tr-3xl'>
         <img className='rounded-lg scale-[90%] sticky'  src="/Portfoliophoto.png" />
       </div>
-      <div className='py-4 w-[65vw] sm:w-[70vw]  bg-[#CA0241]/20 rounded-md items-center '>
+      <div className='py-4 w-[65vw] sm:w-[60vw]  bg-[#CA0241]/20 rounded-md items-center '>
     
         <div className='m-6 sm:px-6 text-justify'>
          

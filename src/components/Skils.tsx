@@ -3,7 +3,7 @@ import React from 'react'
 
 function Skils() {
   return (
-    <div id='Skils' className=' flex flex-col sm:flex-row items-center sm:space-x-[10vw] justify-center sm:ml-6'>
+    <div id='Skils' className=' flex flex-col sm:flex-row items-center sm:space-x-[10vw] justify-center'>
       <header className=' text-3xl pb-4'>Skils</header>
     <div className=' w-[65vw] p-4 sm:p-6  mx-4 space-y-2 rounded-md' >
     
