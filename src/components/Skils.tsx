@@ -11,7 +11,7 @@ function Skils() {
     
         {skils.map((skill) => (
           <div className='rounded-2xl  bg-[#310b17d8]/30 hover:bg-[#CA0241]/50 shadow-2xl m-2 w-fit p-5 space-y-7 sm:space-x-5 space-x-4'>
-            <label>{skill}</label>
+            <label key={skill}>{skill}</label>
           </div>
         )
 

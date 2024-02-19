@@ -1,4 +1,5 @@
 import About from '@/components/About'
+import ContactForm from '@/components/ContactForm'
 import Header from '@/components/Header'
 import Projects from '@/components/Projects'
 import SectionSeparator from '@/components/Section Separator'
@@ -18,6 +19,8 @@ export default function Home() {
       <SectionSeparator />
       <Projects />
       <SectionSeparator />
+      <ContactForm />
+      
     </main>
   )
 }
