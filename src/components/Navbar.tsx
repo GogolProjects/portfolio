@@ -34,7 +34,7 @@ export default function Navbar() {
       }) 
     })
   return (
-    <div id='nav' className='space-x-10 items-center  bg-[rgba(121,6,67,0.3)] sm:bg-[rgba(33,20,118,0.3)] w-[90vw] sm:w-[70vw]  ml-5 sm:ml-[15vw] rounded-full  sm:mt-2 pl-3 sm:px-14 '>  
+    <div id='nav' className='space-x-10 items-center  bg-[rgba(121,6,67,0.3)] sm:bg-[rgba(33,20,118,0.3)] w-[80vw] sm:w-[40vw]  ml-[8vw] sm:ml-[30vw] rounded-full  sm:mt-2 pl-3 sm:px-14 '>  
       <ul className='flex flex-row  items-center opacity-100'>
          <a href='#Start'>
             <img src='Logo.png' className='w-[10vw] scale-[90%] sm:w-[5vw]'/>
