@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Arima} from 'next/font/google'
 import '@/style/globals.css'
-import { cn } from '../lib/utlis'
+import { cn } from '@/lib/utils'
 import Navbar from '@/components/Navbar'
 
 const arima = Arima({ subsets: ['latin'] })
