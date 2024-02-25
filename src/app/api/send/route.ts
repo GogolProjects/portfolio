@@ -1,18 +1,20 @@
 "use server"
-import EmailTemplate from '@/components/Email-template';
-import { getErrorMessage, validateString } from '@/lib/utils';
-import React from 'react';
-import { Resend } from 'resend';
 
+import { Resend } from "resend";
+
+import { getErrorMessage, validateString } from "@/lib/utils";
+import React from "react";
+import EmailTemplate from "@/components/Email-template";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+
 export const sendEmail = async (formData: FormData) => {
  
-  const senderEmail = formData.get("email");
+  const email = formData.get("email");
   const message = formData.get("message");
 
   
-  if (!validateString(senderEmail, 500)) {
+  if (!validateString(email, 500)) {
     return {
       error: "Invalid sender email",
     };
@@ -27,12 +29,12 @@ export const sendEmail = async (formData: FormData) => {
   try {
     data = await resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
-      to: 'mkprojects78@gmail.com',
+      to: ['gogol.projects@gmail.com'],
       subject: "Message from contact form",
-      reply_to: senderEmail,
+      reply_to: email,
       react: React.createElement(EmailTemplate, {
         message: message,
-        email: senderEmail,
+        email: email,
       }),
     });
   } catch (error: unknown) {
