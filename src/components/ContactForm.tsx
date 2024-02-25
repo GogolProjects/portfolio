@@ -1,12 +1,9 @@
 "use client"
 
-import { sendEmail } from '@/app/api/send/route';
+import { sendEmail } from '@/actions/SendEmail';
 import '@/style/globals.css'
 import toast from 'react-hot-toast';
 import {  useFormStatus } from "react-dom";
-
-
-
 
 
 function ContactForm() {
@@ -34,6 +31,7 @@ function ContactForm() {
                 <input
                 name='email'
                 type='email' 
+                autoComplete='email'
                 required
                 maxLength={500}
                 className=' rounded-t-lg p-3'

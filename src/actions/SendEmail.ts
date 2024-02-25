@@ -1,7 +1,6 @@
 "use server"
 
 import { Resend } from "resend";
-
 import { getErrorMessage, validateString } from "@/lib/utils";
 import React from "react";
 import EmailTemplate from "@/components/Email-template";
