@@ -1,32 +1,31 @@
 "use client"
 
-import { sendEmail } from '@/actions/SendEmail';
+import  { sendEmail } from '@/actions/SendEmail';
 import '@/style/globals.css'
+
+import { useState } from 'react';
 import toast from 'react-hot-toast';
-import {  useFormStatus } from "react-dom";
 
 
 function ContactForm() {
 
+  const [loading, setLoading] = useState(false);
   
-    const { pending } = useFormStatus();
-
     return (
         <div id='Contact' className='flex  sm:flex-row flex-col sm:space-x-[10vw] sm:ml-[18vw]'>
          <div className='bg-[#CA0241]/30  shadow-2xl w-[65vw] p-4 sm:p-6   space-y-2 rounded-md'>
             <form 
             id='form' 
             action={async (formData) => {
-                const { data, error } = await sendEmail(formData);
-      
-                if (error) {
-                  toast.error(error);
-                  return;
-                }
-      
-                toast.success("Email sent successfully!");
-              }}
-                     
+              const { data, error } = await sendEmail(formData);
+    
+              if (error) {
+                toast.error(error);
+                return;
+              }
+    
+              toast.success("Email sent successfully!");
+            }}
             className='text-blue-900 text-sm text-wrap flex flex-col space-y-3'>
                 <input
                 name='email'
@@ -46,9 +45,9 @@ function ContactForm() {
 
                 <button 
                 type='submit'
-                disabled={pending}
+                disabled={loading}
                 className='rounded-full shadow-md self-end text-[#f6f6f6]  bg-[#790643f0] hover:bg-[#44092e] w-fit px-4 py-2'>    
-                    {pending ? (
+                    {loading ? (
                         <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white"></div>
                          ) : (<>Send message</>)}
                  </button>

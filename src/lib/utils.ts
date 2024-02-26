@@ -8,13 +8,8 @@ export const validateString = (
   value: unknown,
   maxLength: number
 ): value is string => {
-  return (!value || typeof value !== "string" || value.length > maxLength) ? true : false ;
+  return (!value || typeof value !== "string" || value.length > maxLength) ? false : true ;
 };
-  {/*if (!value || typeof value !== "string" || value.length > maxLength) {
-    return false;
-  }
-return true; };*/}
-
 
 export const getErrorMessage = (error: unknown): string => {
   let message: string;

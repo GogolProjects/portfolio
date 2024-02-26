@@ -1,9 +1,9 @@
-"use server"
-
-import { Resend } from "resend";
-import { getErrorMessage, validateString } from "@/lib/utils";
+'use server'
 import React from "react";
+import { Resend } from "resend";
+import { validateString, getErrorMessage } from "@/lib/utils";
 import EmailTemplate from "@/components/Email-template";
+
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -28,7 +28,7 @@ export const sendEmail = async (formData: FormData) => {
   try {
     data = await resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
-      to: ['gogol.projects@gmail.com'],
+      to: 'gogol.projects@gmail.com',
       subject: "Message from contact form",
       reply_to: email,
       react: React.createElement(EmailTemplate, {

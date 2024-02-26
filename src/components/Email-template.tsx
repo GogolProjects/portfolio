@@ -13,7 +13,7 @@ import {
 } from "@react-email/components";
 
 
-type ContactFormEmailProps = {
+type EmailTemplateProps = {
   message: string;
   email: string;
 };
@@ -21,7 +21,7 @@ type ContactFormEmailProps = {
 export default function EmailTemplate({
   message,
   email,
-}: ContactFormEmailProps) {
+}: EmailTemplateProps) {
   return (
     <Html>
       <Head />
