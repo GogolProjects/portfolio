@@ -3,6 +3,7 @@ import { Arima} from 'next/font/google'
 import '@/style/globals.css'
 import { cn } from '@/lib/utils'
 import Navbar from '@/components/Navbar'
+import { Toaster } from 'react-hot-toast'
 
 const arima = Arima({ subsets: ['latin'] })
 
@@ -26,6 +27,7 @@ export default function RootLayout({
           <Navbar />
         </div>
           {children}
+          <Toaster />
         </body>
     </html>
   )
