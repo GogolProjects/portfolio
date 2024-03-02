@@ -53,6 +53,7 @@ export const projects = [
       github: 'https://github.com/GogolProjects/travelit',
       urlIcon: TravelitLogo,
       url: 'https://travelit.vercel.app/',
+      tags: ["Next.js", "React", "Typescript", "Prisma", "Tailwind", "NextAuth", "Shadcn", "zod", "Axios"],
 
    },
 
@@ -64,6 +65,7 @@ export const projects = [
       github: 'https://github.com/GogolProjects/portfolio',
       urlIcon: Logo,
       url: '',
+      tags: ["Next.js", "React", "Typescipt", "Tailwind", ]
 
       
    }
