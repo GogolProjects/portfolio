@@ -4,8 +4,7 @@ import {  links } from '@/lib/data'
 import React, { FC, useEffect } from 'react'
 
 export default function Navbar() {
-  useEffect(() =>{
-    
+  useEffect(() =>{ 
       const navigation = document.getElementById('nav') as HTMLDivElement
   
       let lastKnownScrollPosition = 0;
@@ -41,7 +40,7 @@ export default function Navbar() {
           </a>
          {links.map((link)=>(   
             <li key={link.hash} className=' ml-8 space-x-10 text-xl font-semibold'> 
-            <a href={link.hash} className='hover:text-blue-950 '>{link.name}</a>
+              <a href={link.hash} className='hover:text-blue-950 '>{link.name}</a>
             </li>
             ))
           }        

@@ -12,7 +12,6 @@ export const metadata: Metadata = {
   title: 'Agata Gogół portfolio',
   description: 'This is my portfolio',
 }
-
 export default function RootLayout({
   children,
 }: {
@@ -21,18 +20,17 @@ export default function RootLayout({
   return (
     <html lang="en"
     className={cn ('scroll-smooth', arima.className)}>
-      <body className=' text-slate-200 sm:bg-gradient-to-r bg-gradient-to-b  from-[#790643f0]  sm:from-10% sm:via-20% from-10% via-25% via-[#6f9af7]  to-[#0b219d]'>
-          
+      <body className=' text-slate-200 sm:bg-gradient-to-r bg-gradient-to-b  from-[#790643f0]  sm:from-10% sm:via-20% from-10% via-25% via-[#6f9af7]  to-[#0b219d]'>      
         <span id='Start'/>
         <div className='sticky top-0 z-10 '>
           <Navbar />
         </div>
           {children}
           <Toaster />
-          <div className='bottom-0'>
-            <Footer />
-          </div>
-        </body>
+        <div className='bottom-0'>
+          <Footer />
+        </div>
+      </body>
     </html>
   )
 }

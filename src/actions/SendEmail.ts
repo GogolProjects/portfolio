@@ -2,7 +2,7 @@
 import React from "react";
 import { Resend } from "resend";
 import { validateString, getErrorMessage } from "@/lib/utils";
-import EmailTemplate from "@/components/Email-template";
+import EmailTemplate from "@/components/EmailTemplate";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -11,7 +11,6 @@ export const sendEmail = async (formData: FormData) => {
   const email = formData.get("email");
   const message = formData.get("message");
 
-  
   if (!validateString(email, 500)) {
     return {
       error: "Invalid sender email",

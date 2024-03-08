@@ -1,9 +1,8 @@
 import About from '@/components/About'
 import ContactForm from '@/components/ContactForm'
-import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Projects from '@/components/Projects'
-import SectionSeparator from '@/components/Section Separator'
+import SectionSeparator from '@/components/SectionSeparator'
 import Skils from '@/components/Skils'
 import Start from '@/components/Start'
 
