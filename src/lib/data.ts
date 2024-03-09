@@ -2,10 +2,10 @@
 import Portfolio from '@/images/Portfolio.png'
 import Travelit from '@/images/Travelit.png'
 import GithubIcon  from '@/images/GitHubIcon.png'
-import LinkedinIcon from '@/images/LinkedinIcon.png'
 import TravelitLogo from '@/images/TravelitLogo.jpg'
 import Logo from '@/images/Logo.png'
-
+import Travelit_2 from '@/images/Travelit_2.png'
+import Portfolio_2 from '@/images/Portfolio_2.png'
 export const links = [
 
 
@@ -49,6 +49,7 @@ export const projects = [
       title: 'Traveit',
       description: 'My first full-stack projects. Traveller forum, where You can share Your travel hacks and expiriences. You can post, subscribe, coemment and more....',
       imageUrl: Travelit,
+      imageUrl_2: Travelit_2,
       githubIcon: GithubIcon,
       github: 'https://github.com/GogolProjects/travelit',
       urlIcon: TravelitLogo,
@@ -59,8 +60,9 @@ export const projects = [
 
    {
       title: 'Portfolio',
-      description: 'My portfolio website, which show You who I am',
+      description: 'My portfolio website, which You can know me a litlle bit better...',
       imageUrl: Portfolio,
+      imageUrl_2: Portfolio_2,
       githubIcon: GithubIcon,
       github: 'https://github.com/GogolProjects/portfolio',
       urlIcon: Logo,

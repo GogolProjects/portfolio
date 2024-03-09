@@ -10,8 +10,8 @@ function Skils() {
     <div className='text-center justify-center flex flex-row flex-wrap'>
     
         {skils.map((skill) => (
-          <div className='rounded-2xl  bg-[#310b17d8]/30 hover:bg-[#CA0241]/50 shadow-2xl m-2 w-fit p-5 space-y-7 sm:space-x-5 space-x-4'>
-            <ul className='list-style-none'>
+          <div className='rounded-2xl hover:animate-bounce bg-[#310b17d8]/30 hover:bg-[#CA0241]/50 shadow-2xl m-2 w-fit p-5 space-y-7 sm:space-x-5 space-x-4'>
+            <ul className='list-style-none '>
               <li key={skill}>{skill}</li>
             </ul>
           </div>
