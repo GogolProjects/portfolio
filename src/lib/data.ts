@@ -66,7 +66,7 @@ export const projects = [
       githubIcon: GithubIcon,
       github: 'https://github.com/GogolProjects/portfolio',
       urlIcon: Logo,
-      url: '',
+      url: '#Start',
       tags: ["Next.js", "React", "Typescipt", "Tailwind", ]
 
       

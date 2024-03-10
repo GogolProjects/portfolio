@@ -19,9 +19,12 @@ function Start() {
               src='/LinkedinIcon.png'/>
            </a>
             </div>
-      <div className='py-4 w-[65vw] sm:w-[51vw]  bg-[#CA0241]/20 rounded-md items-center '>
-        <div className='m-6 sm:px-6 text-justify'>   
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a porta felis. Proin ac condimentum risus, vitae faucibus ligula. Maecenas vel odio placerat, hendrerit magna eget, luctus sem. Proin vitae libero commodo, aliquam nisi nec, congue lectus. Suspendisse eget est blandit tortor fringilla dictum. Nulla non convallis ligula, a gravida libero. Donec ut scelerisque eros, a interdum justo. Suspendisse congue semper risus, sed laoreet purus pharetra in. Vivamus rhoncus et massa non hendrerit. Proin ac purus at purus tincidunt vestibulum id quis velit. Ut pretium sem a libero dapibus lacinia.
+      <div className='py-4 w-[65vw] sm:w-[51vw]  bg-transparent rounded-md items-center '>
+        <div className='m-6 sm:px-6 text-2xl text-center font-semibold'>   
+          Are you looking for someone full of energy, committed and hard-working? 
+          <br/> 
+          <br/>
+          You're in the right place. Scroll down to get to know me a bit...
         </div>
       </div>
     </div>  

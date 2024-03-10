@@ -33,14 +33,14 @@ export default function Navbar() {
       }) 
     })
   return (
-    <div id='nav' className='space-x-10 items-center  bg-[rgba(121,6,67,0.3)] sm:bg-[rgba(33,20,118,0.3)] w-fit  m-auto sm:ml-[30vw] rounded-full  sm:mt-2 p-4 sm:px-14 '>  
-      <ul className='flex flex-wrap sm:flex-row  items-center opacity-100'>
+    <div id='nav' className='items-center  bg-[rgba(121,6,67,0.3)] sm:bg-[rgba(33,20,118,0.3)] w-full sm:w-[700px]  m-auto  rounded-full  sm:mt-2 p-4 sm:px-14 '>  
+      <ul className='flex flex-wrap sm:flex-row  items-center opacity-100 justify-between pr-6'>
          <a href='#Start'>
             <img src='Logo.png' className='w-[10vw] md:w-[50px]'/>
           </a>
          {links.map((link)=>(   
-            <li key={link.hash} className=' ml-8 space-x-10 text-xl font-semibold'> 
-              <a href={link.hash} className='hover:text-blue-950 '>{link.name}</a>
+            <li key={link.hash} className=' ml-auto   text-2xl font-semibold'> 
+              <a href={link.hash} className='hover:text-[#72abf1]'>{link.name}</a>
             </li>
             ))
           }        

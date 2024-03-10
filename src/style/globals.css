@@ -74,3 +74,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+.spec{
+  font-weight: bold;
+  text-transform: capitalize;
+  color: white;
+  background: linear-gradient(45deg,#a10759f0,#050aff);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 8px transparent;
+
+ 
+}
