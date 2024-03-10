@@ -10,11 +10,15 @@ function Start() {
         <img className='rounded-lg scale-[90%] sticky'  src="/Portfoliophoto.png" />
       </div>
       <div className='flex flex-row sm:flex-col sm:space-y-10 space-x-4 sm:space-x-2 items-center justify-center  sm:bg-blue-800/20 hover:bg-[#692a9d]/50 sm:hover:bg-blue-400/50 sm:py-8 pl-4 pr-2 pt-2 pb-4 sm:px-2 rounded-full sm:rounded-full'>
-          <a href='https://github.com/GogolProjects?tab=repositories'>
+          <a 
+          target='_blank'
+          href='https://github.com/GogolProjects?tab=repositories'>
             <img className='w-[10vw] md:w-[50px] mt-2 sm:mt-0 sm:mx-4'
               src='/GitHubIcon.png'/>
             </a>
-          <a href='https://www.linkedin.com/in/agata-gog%C3%B3%C5%82-403976213/'>
+          <a 
+          target='_blank'
+          href='https://www.linkedin.com/in/agata-gog%C3%B3%C5%82-403976213/'>
               <img className='w-[10vw] md:w-[50px] overflow-hidden mt-2 mx-2 sm:mx-3 sm:mt-0'
               src='/LinkedinIcon.png'/>
            </a>

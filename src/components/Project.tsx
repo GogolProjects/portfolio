@@ -19,10 +19,14 @@ function Project({
        <div className=' space-x-3 sm:space-y-2 p-3'> 
         <label className='w-fit sm:w-[10vw] text-3xl m-auto pl-3 sm:pl-3'>{title}</label>
         <div className='flex flex-row items-start space-x-2'>
-          <a href={url}>
+          <a 
+          target='_blank' 
+          href={url}>
             <Image src={urlIcon} width={48} alt='urlIcon' />
           </a>
-          <a href={github}>
+          <a 
+          target='_blank'
+          href={github}>
            <Image src={githubIcon} width={48} alt='githubIcon' />
           </a>
         </div>
