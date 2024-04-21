@@ -1,11 +1,11 @@
 import {render, screen} from '@testing-library/react'
 import About from '@/components/About'
-import { describe } from 'node:test'
+
 
 describe('About', () => {
-    it('should have a header ', () => {
+    it('should have text About ', () => {
         render(<About/>)
-        const myElem = screen.getByRole('header')
+        const myElem = screen.getByText('About')
         expect(myElem).toBeInTheDocument()
     })
 })
