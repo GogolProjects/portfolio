@@ -26,6 +26,7 @@ function ContactForm() {
             }}>
             <input
               name='email'
+              data-testid='email'
               type='email' 
               autoComplete='email'
               required
@@ -35,12 +36,14 @@ function ContactForm() {
             />             
             <textarea 
               name='message'
+              data-testid='message'
               required
               maxLength={5000}
               placeholder='Please write Your message. I will contact with You as soon as possible.'
               className='p-3 sm:w-full min-h-[30vw] w-[60vw] sm:min-h-[15vw] rounded-b-lg'
             />
             <button 
+              data-testid = 'button'
               type='submit'
               disabled={pending}
               className='rounded-full shadow-md self-end text-[#f6f6f6]  bg-[#790643f0] hover:bg-[#44092e] w-fit px-4 py-2'>    
