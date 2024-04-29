@@ -47,7 +47,7 @@ export const skils = [
 export const projects = [
    {
       title: 'Traveit',
-      description: 'My first full-stack projects. Traveller forum, where You can share Your travel hacks and expiriences. You can post, subscribe, coemment and more....',
+      description: 'My first full-stack project. Traveller forum, where You can share Your travel hacks and expiriences. You can post, subscribe, comment and more....',
       imageUrl: Travelit,
       imageUrl_2: Travelit_2,
       githubIcon: GithubIcon,

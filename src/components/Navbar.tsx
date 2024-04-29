@@ -34,7 +34,7 @@ export default function Navbar() {
     })
   return (
     <div id='nav' className='items-center  bg-[rgba(121,6,67,0.3)] sm:bg-[rgba(33,20,118,0.3)] w-full sm:w-[700px]  m-auto  rounded-full  sm:mt-2 p-4 sm:px-14 '>  
-      <ul className='flex flex-wrap sm:flex-row  items-center opacity-100 justify-between pr-6'>
+      <ul className='flex flex-wrap sm:flex-row  items-center opacity-100 justify-between pr-auto'>
          <a href='#Start'>
             <img src='Logo.png' className='w-[10vw] md:w-[50px]'/>
           </a>
