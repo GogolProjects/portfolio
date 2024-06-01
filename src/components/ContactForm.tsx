@@ -1,6 +1,7 @@
 "use client"
 
 import  { sendEmail } from '@/actions/SendEmail';
+import { useRef } from 'react';
 import { useFormStatus } from 'react-dom';
 import toast from 'react-hot-toast';
 
@@ -8,13 +9,15 @@ import toast from 'react-hot-toast';
 function ContactForm() {
 
   const { pending } = useFormStatus();
-  
+  const formRef = useRef<HTMLFormElement | null>(null);
+
     return (
       <div id='Contact' className='flex  sm:flex-row flex-col sm:space-x-[10vw] sm:ml-[18vw]'>
         <div className='bg-[#CA0241]/30  shadow-2xl w-[65vw] p-4 sm:p-6   space-y-2 rounded-md'>
           <form 
             id='form' 
             className='text-blue-900 text-sm text-wrap flex flex-col space-y-3'
+            ref={formRef}
             action={async (formData) => {
               const { data, error } = await sendEmail(formData);
               if (error) {
@@ -23,6 +26,7 @@ function ContactForm() {
               }
               toast.success("Email sent successfully!", {position: 'bottom-center'})
               console.log("Success");
+              formRef.current!.reset()
             }}>
             <input
               name='email'
