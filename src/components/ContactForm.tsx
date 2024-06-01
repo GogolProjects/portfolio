@@ -44,7 +44,7 @@ function ContactForm() {
               required
               maxLength={5000}
               placeholder='Please write Your message. I will contact with You as soon as possible.'
-              className='p-auto sm:w-full min-h-[30vw] w-auto min-w-[30vw] sm:min-h-[15vw] rounded-b-lg'
+              className='p-3 sm:w-full min-h-[30vw] w-auto min-w-[30vw] sm:min-h-[15vw] rounded-b-lg'
             />
             <button 
               data-testid = 'button'
